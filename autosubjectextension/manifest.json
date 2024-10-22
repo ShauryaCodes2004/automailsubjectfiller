@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Gmail Auto Subject Filler",
+  "version": "1.0",
+  "description": "Automatically fills in a subject for emails without one.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
